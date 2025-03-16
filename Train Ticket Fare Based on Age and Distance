@@ -1,0 +1,12 @@
+distance = float(input("Enter travel distance (km): "))
+age = int(input("Enter passenger age: "))
+fare_per_km = 5 
+fare = distance * fare_per_km
+discount = 0
+if distance > 100:
+    if age < 12 or age > 60:
+        discount = 0.50  
+elif age < 12 or age > 60:
+    discount = 0.25 
+final_fare = fare * (1 - discount)
+print(f"Ticket Price: ₹{final_fare:}")
