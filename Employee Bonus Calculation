@@ -1,0 +1,6 @@
+salary = float(input("Salary: "))
+years = int(input("Years of experience: "))
+
+bonus = 0.10 * salary if years > 5 else 0.05 * salary if years >= 3 else 0.02 * salary
+
+print("Final salary:₹",salary + bonus)
