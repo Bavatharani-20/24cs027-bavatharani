@@ -1,0 +1,13 @@
+d = float(input("Distance (km): "))
+s = float(input("Speed (km/h): "))
+h = int(input("Hour: "))
+m = int(input("Minute: "))
+t = int(input("Time left (min): "))
+
+travel = (d / s) * 60
+m += travel
+h += m // 60
+m = int(m % 60)
+
+print("Arrive at", h:m)
+print("Time left: ",t - travel," min")
