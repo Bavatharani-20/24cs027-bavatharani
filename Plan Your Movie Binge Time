@@ -1,0 +1,8 @@
+movie_duration = int(input("Movie duration (minutes): "))
+total_time = int(input("Total time available (minutes): "))
+
+movies_watched = total_time // movie_duration
+remaining_time = total_time % movie_duration
+
+print("Full movies:",movies_watched)
+print("Time left:",remaining_time ,"minutes")
