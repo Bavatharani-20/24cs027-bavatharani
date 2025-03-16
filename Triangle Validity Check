@@ -1,0 +1,10 @@
+a1 = int(input("Enter first angle: "))
+a2 = int(input("Enter second angle: "))
+a3 = int(input("Enter third angle: "))
+
+total = a1 + a2 + a3
+
+if a1 > 0 and a2 > 0 and a3 > 0 and total == 180:
+    print("The angles form a triangle.")
+else:
+    print("The angles do not form a triangle.")
