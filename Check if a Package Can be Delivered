@@ -1,0 +1,7 @@
+dist = int(input("Enter distance to delivery location (miles): "))
+wt = int(input("Enter package weight (pounds): "))
+
+if dist <= 100 and wt <= 50:
+    print("The package can be delivered.")
+else:
+    print("The package cannot be delivered.")
