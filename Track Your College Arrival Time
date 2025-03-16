@@ -3,11 +3,9 @@ s = float(input("Speed (km/h): "))
 h = int(input("Hour: "))
 m = int(input("Minute: "))
 t = int(input("Time left (min): "))
-
-travel = (d / s) * 60
-m += travel
+travel = (d / s) * 60  
+m += int(travel)  
 h += m // 60
-m = int(m % 60)
-
-print("Arrive at", h:m)
-print("Time left: ",t - travel," min")
+m = m % 60
+print("Arrive at {:02d}:{:02d}".format(h, m))
+print("Time left:", int(t - travel), "min")
