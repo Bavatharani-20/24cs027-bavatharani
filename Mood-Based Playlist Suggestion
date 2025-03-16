@@ -1,0 +1,17 @@
+mood = input("Enter your mood (Happy/Sad/Relaxed): ")
+weather = input("Enter the weather (Sunny/Rainy/Other): ")
+if mood == "Happy":
+    if weather == "Sunny":
+        playlist = "Pop Hits"
+    else:
+        playlist = "Top Charts"
+elif mood == "Sad":
+    if weather == "Rainy":
+        playlist = "Sad Acoustic"
+    else:
+        playlist = "Top Charts"
+elif mood == "Relaxed":
+    playlist = "Chill Vibes"
+else:
+    playlist = "Top Charts"
+print(f"Suggested Playlist: {playlist}")
